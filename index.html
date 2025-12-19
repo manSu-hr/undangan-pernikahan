@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Ahmad Fauzan & Aisyah Putri</title>
+    <meta name="description" content="Undangan Pernikahan Ahmad Fauzan & Aisyah Putri Ramadhani - 25 Januari 2025">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Music - Arabic Nasheed -->
+    <audio id="bgMusic" loop preload="auto">
+        <source
+            src="https://ia800905.us.archive.org/19/items/NashsyidArabTanpaMuzik/01%20Taweel%20Al%20Shawq%20-%20Ahmed%20Bukhatir.mp3"
+            type="audio/mpeg">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control Button -->
+    <button class="music-btn" id="musicBtn">
+        <i class="fas fa-music"></i>
+        <span class="music-pulse"></span>
+    </button>
+
+    <!-- Cover/Opening Section -->
+    <section class="cover" id="cover">
+        <div class="cover-bg"></div>
+        <div class="cover-overlay"></div>
+
+        <!-- Animated Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Decorative Frame -->
+        <div class="cover-frame">
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+        </div>
+
+        <div class="cover-content">
+            <div class="bismillah-cover">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <p class="wedding-label">THE WEDDING OF</p>
+            <div class="couple-names-cover">
+                <span class="groom-name">Ahmad Fauzan</span>
+                <div class="names-divider">
+                    <span class="divider-line"></span>
+                    <span class="ampersand-cover">&</span>
+                    <span class="divider-line"></span>
+                </div>
+                <span class="bride-name">Aisyah Putri</span>
+            </div>
+            <div class="wedding-date-cover">
+                <span>25 . 01 . 2025</span>
+            </div>
+            <p class="invite-text">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <button class="open-btn" id="openBtn">
+                <span class="btn-text">Buka Undangan</span>
+                <span class="btn-icon"><i class="fas fa-envelope-open-text"></i></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <!-- Section 1: Hero with Main Photo -->
+        <section class="hero-section" id="heroSection">
+            <div class="hero-bg-image" style="background-image: url('assets/foto1.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="bismillah-hero" data-aos="fade-down" data-aos-duration="1000">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </div>
+                <p class="salam" data-aos="fade-up" data-aos-delay="200">
+                    Assalamu'alaikum Warahmatullahi Wabarakatuh
+                </p>
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
+                    <p>Dengan memohon Rahmat dan Ridho Allah SWT,</p>
+                    <p>Kami bermaksud menyelenggarakan acara pernikahan putra-putri kami</p>
+                </div>
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+                    <span>Scroll ke bawah</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Mempelai Pria -->
+        <section class="mempelai-section mempelai-pria" id="mempelaiPria">
+            <div class="mempelai-bg"></div>
+            <div class="mempelai-content">
+                <div class="mempelai-photo-container" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="photo-frame-premium">
+                        <div class="frame-glow"></div>
+                        <img src="assets/foto2.jpg" alt="Ahmad Fauzan" class="mempelai-photo">
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+                <div class="mempelai-info" data-aos="fade-up" data-aos-delay="300">
+                    <p class="mempelai-label">Mempelai Pria</p>
+                    <h2 class="mempelai-name">Ahmad Fauzan</h2>
+                    <div class="ornament-divider">
+                        <span></span><i class="fas fa-heart"></i><span></span>
+                    </div>
+                    <p class="parent-label">Putra dari</p>
+                    <p class="parent-names">Bapak H. Muhammad Ridwan</p>
+                    <p class="parent-connector">&</p>
+                    <p class="parent-names">Ibu Hj. Siti Aminah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Mempelai Wanita -->
+        <section class="mempelai-section mempelai-wanita" id="mempelaiWanita">
+            <div class="mempelai-bg reverse"></div>
+            <div class="mempelai-content reverse">
+                <div class="mempelai-photo-container" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="photo-frame-premium">
+                        <div class="frame-glow"></div>
+                        <img src="assets/foto3.jpg" alt="Aisyah Putri Ramadhani" class="mempelai-photo">
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+                <div class="mempelai-info" data-aos="fade-up" data-aos-delay="300">
+                    <p class="mempelai-label">Mempelai Wanita</p>
+                    <h2 class="mempelai-name">Aisyah Putri Ramadhani</h2>
+                    <div class="ornament-divider">
+                        <span></span><i class="fas fa-heart"></i><span></span>
+                    </div>
+                    <p class="parent-label">Putri dari</p>
+                    <p class="parent-names">Bapak H. Abdul Karim</p>
+                    <p class="parent-connector">&</p>
+                    <p class="parent-names">Ibu Hj. Nurhasanah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Gallery Showcase -->
+        <section class="gallery-section" id="galeriSection">
+            <div class="section-header" data-aos="fade-down">
+                <p class="section-subtitle">Momen Bahagia</p>
+                <h2 class="section-title-gold">Galeri Kami</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="gallery-showcase">
+                <div class="gallery-main" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="gallery-frame">
+                        <img src="assets/foto1.jpg" alt="Foto Pernikahan">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-side">
+                    <div class="gallery-item-premium" data-aos="fade-left" data-aos-delay="200">
+                        <div class="gallery-frame">
+                            <img src="assets/foto2.jpg" alt="Foto Prewedding">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item-premium" data-aos="fade-left" data-aos-delay="400">
+                        <div class="gallery-frame">
+                            <img src="assets/foto3.jpg" alt="Foto Romantis">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Event Details -->
+        <section class="event-section" id="eventSection">
+            <div class="event-bg-pattern"></div>
+            <div class="section-header" data-aos="fade-down">
+                <p class="section-subtitle">Waktu & Tempat</p>
+                <h2 class="section-title-gold">Acara Pernikahan</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="event-card-premium" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="event-icon-box">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <h3 class="event-name">Walimatul 'Urs</h3>
+
+                <div class="event-datetime">
+                    <div class="date-display">
+                        <span class="day-name">Sabtu</span>
+                        <div class="date-big">
+                            <span class="date-num">25</span>
+                            <div class="date-details">
+                                <span>Januari</span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-display">
+                        <i class="far fa-clock"></i>
+                        <span>Pukul 10.00 WIB - Selesai</span>
+                    </div>
+                </div>
+
+                <div class="event-location-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="location-details">
+                        <h4>Gedung Serbaguna Al-Hikmah</h4>
+                        <p>Jl. Merdeka No. 45, Kecamatan Sukamaju,<br>Kota Bandung, Jawa Barat</p>
+                    </div>
+                </div>
+
+                <a href="https://maps.google.com/?q=Gedung+Serbaguna+Al-Hikmah+Bandung" target="_blank"
+                    class="maps-button">
+                    <i class="fas fa-directions"></i> Petunjuk Arah
+                </a>
+            </div>
+
+            <!-- Countdown -->
+            <div class="countdown-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="countdown-label">Menghitung Hari</h3>
+                <div class="countdown-boxes">
+                    <div class="countdown-box">
+                        <span class="count-num" id="days">00</span>
+                        <span class="count-label">Hari</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <span class="count-num" id="hours">00</span>
+                        <span class="count-label">Jam</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <span class="count-num" id="minutes">00</span>
+                        <span class="count-label">Menit</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <span class="count-num" id="seconds">00</span>
+                        <span class="count-label">Detik</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Adab -->
+        <section class="adab-section" id="adabSection">
+            <div class="section-header" data-aos="fade-down">
+                <p class="section-subtitle">Tata Cara</p>
+                <h2 class="section-title-gold">Adab Menghadiri Walimah</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="adab-cards">
+                <div class="adab-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="adab-icon"><i class="fas fa-user-tie"></i></div>
+                    <p>Berpakaian Sopan<br>& Menutup Aurat</p>
+                </div>
+                <div class="adab-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="adab-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <p>Menjaga<br>Kebersihan</p>
+                </div>
+                <div class="adab-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="adab-icon"><i class="fas fa-pray"></i></div>
+                    <p>Mendoakan<br>Kedua Mempelai</p>
+                </div>
+                <div class="adab-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="adab-icon"><i class="fas fa-handshake"></i></div>
+                    <p>Menjaga<br>Silaturahmi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Wishes -->
+        <section class="wishes-section" id="wishesSection">
+            <div class="wishes-bg"></div>
+            <div class="section-header" data-aos="fade-down">
+                <p class="section-subtitle">Doa & Ucapan</p>
+                <h2 class="section-title-gold">Kirim Ucapan</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="wishes-card" data-aos="fade-up" data-aos-duration="1000">
+                <p class="wishes-intro">
+                    Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin
+                    memberikan doa dan ucapan, silakan kirim melalui form di bawah ini:
+                </p>
+                <form id="wishesForm" class="wishes-form">
+                    <div class="input-group">
+                        <label for="senderName"><i class="fas fa-user"></i> Nama Anda</label>
+                        <input type="text" id="senderName" placeholder="Masukkan nama lengkap" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="wishMessage"><i class="fas fa-comment-alt"></i> Ucapan & Doa</label>
+                        <textarea id="wishMessage" rows="4" placeholder="Tuliskan ucapan dan doa terbaik Anda..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Kirim via WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 8: Closing -->
+        <section class="closing-section" id="closingSection">
+            <div class="closing-bg" style="background-image: url('assets/foto1.jpg');"></div>
+            <div class="closing-overlay"></div>
+            <div class="closing-content">
+                <p class="closing-text" data-aos="fade-up">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>
+                    apabila Bapak/Ibu/Saudara/i berkenan hadir untuk<br>
+                    memberikan doa restu kepada kedua mempelai.
+                </p>
+
+                <p class="wassalam" data-aos="fade-up" data-aos-delay="200">
+                    Wassalamu'alaikum Warahmatullahi Wabarakatuh
+                </p>
+
+                <div class="closing-names" data-aos="zoom-in" data-aos-delay="400">
+                    <span class="closing-groom">Ahmad Fauzan</span>
+                    <span class="closing-amp">&</span>
+                    <span class="closing-bride">Aisyah Putri</span>
+                </div>
+
+                <div class="quran-verse" data-aos="fade-up" data-aos-delay="600">
+                    <p class="verse-arabic">
+                        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+                        وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+                    </p>
+                    <p class="verse-translation">
+                        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+                        pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya,
+                        dan dijadikan-Nya di antaramu rasa kasih dan sayang."
+                    </p>
+                    <p class="verse-source">— QS. Ar-Rum: 21</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <i class="fas fa-heart"></i> for Ahmad Fauzan & Aisyah Putri</p>
+            <p class="copyright">© 2025 Wedding Invitation</p>
+        </footer>
+    </main>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
