@@ -1,6 +1,6 @@
 /* ============================================
    Wedding Invitation - JavaScript
-   Ahmad Fauzan & Aisyah Putri Ramadhani
+   Muhammad Deny & Esty Serihandayani
    Premium Modern Design
    ============================================ */
 
@@ -12,6 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
         once: true,
         offset: 80
     });
+
+    // ============================================
+    // Guest Name from URL Parameter
+    // ============================================
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestName = urlParams.get('to');
+    const guestNameEl = document.getElementById('guestName');
+
+    if (guestName && guestNameEl) {
+        // Decode and display guest name
+        guestNameEl.textContent = decodeURIComponent(guestName.replace(/\+/g, ' '));
+        guestNameEl.style.display = 'block';
+    } else if (guestNameEl) {
+        guestNameEl.style.display = 'none';
+    }
 
     // Elements
     const cover = document.getElementById('cover');
@@ -94,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // ============================================
     // Countdown Timer
     // ============================================
-    // Tanggal pernikahan: 25 Januari 2025
-    const weddingDate = new Date('2025-01-25T10:00:00').getTime();
+    // Tanggal pernikahan: 28 Desember 2025
+    const weddingDate = new Date('2025-12-28T10:00:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -148,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Format pesan WhatsApp
             const message = encodeURIComponent(
                 `*🎊 Ucapan Pernikahan*\n` +
-                `*Ahmad Fauzan & Aisyah Putri Ramadhani*\n\n` +
+                `*Muhammad Deny & Esty Serihandayani*\n\n` +
                 `Dari: *${senderName}*\n\n` +
                 `${wishMessage}\n\n` +
                 `────────────\n` +
@@ -343,6 +358,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Console Welcome Message
     // ============================================
     console.log('%c💕 Wedding Invitation 💕', 'font-size: 20px; color: #D4AF37;');
-    console.log('%cAhmad Fauzan & Aisyah Putri Ramadhani', 'font-size: 14px; color: #B8860B;');
-    console.log('%c25 Januari 2025', 'font-size: 12px; color: #888;');
+    console.log('%cMuhammad Deny & Esty Serihandayani', 'font-size: 14px; color: #B8860B;');
+    console.log('%c28 Desember 2025', 'font-size: 12px; color: #888;');
 });

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Link Undangan - Muhammad Deny & Esty Serihandayani</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #D4AF37, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .input-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #D4AF37;
+            font-weight: 600;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: #0d0d0d;
+            color: #fff;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        .hint {
+            color: #666;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .base-url-section {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: #0d0d0d;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            border: none;
+            border-radius: 10px;
+            color: #0d0d0d;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .results {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .results h2 {
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #0d0d0d;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .link-item .name {
+            min-width: 150px;
+            font-weight: 600;
+            color: #D4AF37;
+        }
+
+        .link-item .url {
+            flex: 1;
+            font-size: 12px;
+            color: #888;
+            word-break: break-all;
+        }
+
+        .link-item .copy-btn {
+            padding: 8px 16px;
+            background: #333;
+            border: 1px solid #D4AF37;
+            border-radius: 5px;
+            color: #D4AF37;
+            cursor: pointer;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .link-item .copy-btn:hover {
+            background: #D4AF37;
+            color: #0d0d0d;
+        }
+
+        .copy-all-btn {
+            margin-top: 20px;
+            background: #333;
+            border: 2px solid #D4AF37;
+            color: #D4AF37;
+        }
+
+        .copy-all-btn:hover {
+            background: #D4AF37;
+            color: #0d0d0d;
+        }
+
+        .count {
+            text-align: center;
+            padding: 10px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #D4AF37;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #D4AF37;
+            color: #0d0d0d;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎊 Generator Link Undangan</h1>
+        <p class="subtitle">Muhammad Deny & Esty Serihandayani - 28 Desember 2025</p>
+
+        <div class="input-section">
+            <div class="base-url-section">
+                <label>🔗 Base URL Undangan</label>
+                <input type="text" id="baseUrl" value="https://yourwebsite.com/undangan/"
+                    placeholder="https://yourwebsite.com/undangan/">
+                <p class="hint">Masukkan URL website undangan kamu (tanpa parameter ?to=)</p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <label>👥 Daftar Nama Tamu (satu nama per baris)</label>
+                <textarea id="guestNames" placeholder="Suherman
+Lilik Mardiana
+Suhernawati
+Sasilawati
+Bapak Haji Ahmad
+Ibu Nurhasanah
+...">Suherman
+Lilik Mardiana
+Suhernawati
+Sasilawati</textarea>
+                <p class="hint">Masukkan nama tamu undangan, satu nama per baris. Maksimal tidak terbatas!</p>
+            </div>
+
+            <button onclick="generateLinks()">✨ Generate Link Undangan</button>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>📋 Link Undangan</h2>
+            <div class="count" id="count"></div>
+            <div id="linkList"></div>
+            <button class="copy-all-btn" onclick="copyAllLinks()">📋 Salin Semua Link</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">✅ Link berhasil disalin!</div>
+
+    <script>
+        function generateLinks() {
+            const baseUrl = document.getElementById('baseUrl').value.trim();
+            const namesText = document.getElementById('guestNames').value.trim();
+
+            if (!baseUrl || !namesText) {
+                showToast('⚠️ Mohon isi Base URL dan Daftar Nama!');
+                return;
+            }
+
+            const names = namesText.split('\n').filter(name => name.trim() !== '');
+            const linkList = document.getElementById('linkList');
+            linkList.innerHTML = '';
+
+            names.forEach((name, index) => {
+                const cleanName = name.trim();
+                const encodedName = encodeURIComponent(cleanName);
+                const url = `${baseUrl}?to=${encodedName}`;
+
+                const item = document.createElement('div');
+                item.className = 'link-item';
+                item.innerHTML = `
+                    <span class="name">${index + 1}. ${cleanName}</span>
+                    <span class="url">${url}</span>
+                    <button class="copy-btn" onclick="copyLink('${url}')">Salin</button>
+                `;
+                linkList.appendChild(item);
+            });
+
+            document.getElementById('count').textContent = `Total: ${names.length} tamu undangan`;
+            document.getElementById('results').style.display = 'block';
+
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyLink(url) {
+            navigator.clipboard.writeText(url).then(() => {
+                showToast('✅ Link berhasil disalin!');
+            });
+        }
+
+        function copyAllLinks() {
+            const baseUrl = document.getElementById('baseUrl').value.trim();
+            const namesText = document.getElementById('guestNames').value.trim();
+            const names = namesText.split('\n').filter(name => name.trim() !== '');
+
+            let allLinks = '';
+            names.forEach(name => {
+                const cleanName = name.trim();
+                const encodedName = encodeURIComponent(cleanName);
+                const url = `${baseUrl}?to=${encodedName}`;
+                allLinks += `${cleanName}: ${url}\n`;
+            });
+
+            navigator.clipboard.writeText(allLinks).then(() => {
+                showToast('✅ Semua link berhasil disalin!');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2500);
+        }
+    </script>
+</body>
+
+</html>

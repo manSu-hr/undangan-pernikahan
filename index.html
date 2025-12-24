@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan - Ahmad Fauzan & Aisyah Putri</title>
-    <meta name="description" content="Undangan Pernikahan Ahmad Fauzan & Aisyah Putri Ramadhani - 25 Januari 2025">
+    <title>Undangan Pernikahan - Muhammad Deny & Esty Serihandayani</title>
+    <meta name="description" content="Undangan Pernikahan Muhammad Deny & Esty Serihandayani - 28 Desember 2025">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,12 +24,10 @@
 </head>
 
 <body>
-    <!-- Background Music - Arabic Nasheed -->
+    <!-- Background Music - Fine Today by Ardhito Pramono -->
     <audio id="bgMusic" loop preload="auto">
-        <source
-            src="https://ia800905.us.archive.org/19/items/NashsyidArabTanpaMuzik/01%20Taweel%20Al%20Shawq%20-%20Ahmed%20Bukhatir.mp3"
+        <source src="https://byattari.com/wp-content/uploads/2024/11/Ardhito-Pramono-fine-today-Lyric-Video.mp3"
             type="audio/mpeg">
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Music Control Button -->
@@ -69,18 +67,19 @@
             <div class="bismillah-cover">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
             <p class="wedding-label">THE WEDDING OF</p>
             <div class="couple-names-cover">
-                <span class="groom-name">Ahmad Fauzan</span>
+                <span class="groom-name">Muhammad Deny</span>
                 <div class="names-divider">
                     <span class="divider-line"></span>
                     <span class="ampersand-cover">&</span>
                     <span class="divider-line"></span>
                 </div>
-                <span class="bride-name">Aisyah Putri</span>
+                <span class="bride-name">Esty Serihandayani</span>
             </div>
             <div class="wedding-date-cover">
-                <span>25 . 01 . 2025</span>
+                <span>28 . 12 . 2025</span>
             </div>
             <p class="invite-text">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <p class="guest-name" id="guestName"></p>
             <button class="open-btn" id="openBtn">
                 <span class="btn-text">Buka Undangan</span>
                 <span class="btn-icon"><i class="fas fa-envelope-open-text"></i></span>
@@ -93,7 +92,7 @@
 
         <!-- Section 1: Hero with Main Photo -->
         <section class="hero-section" id="heroSection">
-            <div class="hero-bg-image" style="background-image: url('assets/foto1.jpg');"></div>
+            <div class="hero-bg-image" style="background-image: url('assets/foto_wanita.jpg');"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="bismillah-hero" data-aos="fade-down" data-aos-duration="1000">
@@ -120,13 +119,13 @@
                 <div class="mempelai-photo-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="photo-frame-premium">
                         <div class="frame-glow"></div>
-                        <img src="assets/foto2.jpg" alt="Ahmad Fauzan" class="mempelai-photo">
+                        <img src="assets/foto_pria.jpg" alt="Muhammad Deny" class="mempelai-photo">
                         <div class="frame-border"></div>
                     </div>
                 </div>
                 <div class="mempelai-info" data-aos="fade-up" data-aos-delay="300">
                     <p class="mempelai-label">Mempelai Pria</p>
-                    <h2 class="mempelai-name">Ahmad Fauzan</h2>
+                    <h2 class="mempelai-name">Muhammad Deny</h2>
                     <div class="ornament-divider">
                         <span></span><i class="fas fa-heart"></i><span></span>
                     </div>
@@ -145,13 +144,13 @@
                 <div class="mempelai-photo-container" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="photo-frame-premium">
                         <div class="frame-glow"></div>
-                        <img src="assets/foto3.jpg" alt="Aisyah Putri Ramadhani" class="mempelai-photo">
+                        <img src="assets/foto_wanita.jpg" alt="Esty Serihandayani" class="mempelai-photo">
                         <div class="frame-border"></div>
                     </div>
                 </div>
                 <div class="mempelai-info" data-aos="fade-up" data-aos-delay="300">
                     <p class="mempelai-label">Mempelai Wanita</p>
-                    <h2 class="mempelai-name">Aisyah Putri Ramadhani</h2>
+                    <h2 class="mempelai-name">Esty Serihandayani</h2>
                     <div class="ornament-divider">
                         <span></span><i class="fas fa-heart"></i><span></span>
                     </div>
@@ -174,7 +173,7 @@
             <div class="gallery-showcase">
                 <div class="gallery-main" data-aos="fade-right" data-aos-duration="1000">
                     <div class="gallery-frame">
-                        <img src="assets/foto1.jpg" alt="Foto Pernikahan">
+                        <img src="assets/foto_pria.jpg" alt="Foto Mempelai Pria">
                         <div class="gallery-overlay">
                             <i class="fas fa-heart"></i>
                         </div>
@@ -183,7 +182,7 @@
                 <div class="gallery-side">
                     <div class="gallery-item-premium" data-aos="fade-left" data-aos-delay="200">
                         <div class="gallery-frame">
-                            <img src="assets/foto2.jpg" alt="Foto Prewedding">
+                            <img src="assets/foto_wanita.jpg" alt="Foto Mempelai Wanita">
                             <div class="gallery-overlay">
                                 <i class="fas fa-heart"></i>
                             </div>
@@ -191,7 +190,7 @@
                     </div>
                     <div class="gallery-item-premium" data-aos="fade-left" data-aos-delay="400">
                         <div class="gallery-frame">
-                            <img src="assets/foto3.jpg" alt="Foto Romantis">
+                            <img src="assets/foto_pria.jpg" alt="Foto Mempelai Pria">
                             <div class="gallery-overlay">
                                 <i class="fas fa-heart"></i>
                             </div>
@@ -218,11 +217,11 @@
 
                 <div class="event-datetime">
                     <div class="date-display">
-                        <span class="day-name">Sabtu</span>
+                        <span class="day-name">Minggu</span>
                         <div class="date-big">
-                            <span class="date-num">25</span>
+                            <span class="date-num">28</span>
                             <div class="date-details">
-                                <span>Januari</span>
+                                <span>Desember</span>
                                 <span>2025</span>
                             </div>
                         </div>
@@ -236,12 +235,12 @@
                 <div class="event-location-box">
                     <i class="fas fa-map-marker-alt"></i>
                     <div class="location-details">
-                        <h4>Gedung Serbaguna Al-Hikmah</h4>
-                        <p>Jl. Merdeka No. 45, Kecamatan Sukamaju,<br>Kota Bandung, Jawa Barat</p>
+                        <h4>Desa Pampang, Kec. Sukamulia</h4>
+                        <p>Kabupaten Lombok Timur,<br>Nusa Tenggara Barat 83661</p>
                     </div>
                 </div>
 
-                <a href="https://maps.google.com/?q=Gedung+Serbaguna+Al-Hikmah+Bandung" target="_blank"
+                <a href="https://maps.google.com/?q=9F7M%2BC9M+Paok+Pampang+Sukamulia+Lombok+Timur" target="_blank"
                     class="maps-button">
                     <i class="fas fa-directions"></i> Petunjuk Arah
                 </a>
@@ -336,7 +335,7 @@
 
         <!-- Section 8: Closing -->
         <section class="closing-section" id="closingSection">
-            <div class="closing-bg" style="background-image: url('assets/foto1.jpg');"></div>
+            <div class="closing-bg" style="background-image: url('assets/foto_wanita.jpg');"></div>
             <div class="closing-overlay"></div>
             <div class="closing-content">
                 <p class="closing-text" data-aos="fade-up">
@@ -350,9 +349,9 @@
                 </p>
 
                 <div class="closing-names" data-aos="zoom-in" data-aos-delay="400">
-                    <span class="closing-groom">Ahmad Fauzan</span>
+                    <span class="closing-groom">Muhammad Deny</span>
                     <span class="closing-amp">&</span>
-                    <span class="closing-bride">Aisyah Putri</span>
+                    <span class="closing-bride">Esty Serihandayani</span>
                 </div>
 
                 <div class="quran-verse" data-aos="fade-up" data-aos-delay="600">
@@ -372,7 +371,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Made with <i class="fas fa-heart"></i> for Ahmad Fauzan & Aisyah Putri</p>
+            <p>Made with <i class="fas fa-heart"></i> for Muhammad Deny & Esty Serihandayani</p>
             <p class="copyright">© 2025 Wedding Invitation</p>
         </footer>
     </main>

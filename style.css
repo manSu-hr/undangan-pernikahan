@@ -405,7 +405,16 @@ img {
     font-family: var(--font-body);
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+.guest-name {
+    font-family: var(--font-script);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    color: var(--gold);
+    text-shadow: 0 0 20px var(--gold-glow);
     margin-bottom: 30px;
+    animation: shimmerText 3s ease-in-out infinite;
 }
 
 /* Open Button */
