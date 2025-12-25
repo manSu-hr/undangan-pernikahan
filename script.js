@@ -1,6 +1,6 @@
 /* ============================================
    Wedding Invitation - JavaScript
-   Muhammad Deny & Esty Serihandayani
+   Muhammad Hebiburrahman & Esti Sri Handayani
    Premium Modern Design
    ============================================ */
 
@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // ============================================
     // Countdown Timer
     // ============================================
-    // Tanggal pernikahan: 28 Desember 2025
-    const weddingDate = new Date('2025-12-28T10:00:00').getTime();
+    // Tanggal pernikahan: 29 Desember 2025
+    const weddingDate = new Date('2025-12-29T08:00:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Format pesan WhatsApp
             const message = encodeURIComponent(
                 `*🎊 Ucapan Pernikahan*\n` +
-                `*Muhammad Deny & Esty Serihandayani*\n\n` +
+                `*Muhammad Hebiburrahman & Esti Sri Handayani*\n\n` +
                 `Dari: *${senderName}*\n\n` +
                 `${wishMessage}\n\n` +
                 `────────────\n` +
@@ -358,6 +358,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Console Welcome Message
     // ============================================
     console.log('%c💕 Wedding Invitation 💕', 'font-size: 20px; color: #D4AF37;');
-    console.log('%cMuhammad Deny & Esty Serihandayani', 'font-size: 14px; color: #B8860B;');
-    console.log('%c28 Desember 2025', 'font-size: 12px; color: #888;');
+    console.log('%cMuhammad Hebiburrahman & Esti Sri Handayani', 'font-size: 14px; color: #B8860B;');
+    console.log('%c29 Desember 2025', 'font-size: 12px; color: #888;');
 });
