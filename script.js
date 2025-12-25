@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // WhatsApp Wishes Form
     // ============================================
     const wishesForm = document.getElementById('wishesForm');
-    const phoneNumber = '6281337062413'; // Tanpa + dan spasi
+    const phoneNumber = '6287704724859'; // Tanpa + dan spasi
 
     wishesForm.addEventListener('submit', function (e) {
         e.preventDefault();
