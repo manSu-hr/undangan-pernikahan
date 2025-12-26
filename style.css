@@ -1490,6 +1490,35 @@ img {
     .wishes-card {
         padding: 35px 25px;
     }
+
+    /* Hiburan - Tablet Optimized */
+    .hiburan-intro {
+        font-size: 0.95rem;
+    }
+
+    .performer-item {
+        padding: 14px 20px;
+    }
+
+    .performer-item i {
+        font-size: 1.2rem;
+    }
+
+    .performer-item span {
+        font-size: 1.3rem;
+    }
+
+    .guest-label {
+        font-size: 0.9rem;
+    }
+
+    .guest-name-highlight span {
+        font-size: 1.4rem;
+    }
+
+    .countdown-label {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1501,8 +1530,20 @@ img {
         height: 200px;
     }
 
+    /* Countdown - Mobile Optimized */
+    .countdown-wrapper {
+        padding: 0 10px;
+    }
+
+    .countdown-label {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
     .countdown-boxes {
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .countdown-separator {
@@ -1510,7 +1551,72 @@ img {
     }
 
     .countdown-box {
-        min-width: 65px;
+        min-width: 60px;
+        padding: 12px 8px;
+        border-radius: 10px;
+        flex: 1;
+        max-width: 70px;
+    }
+
+    .count-num {
+        font-size: 1.6rem;
+    }
+
+    .count-label {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+    /* Hiburan - Mobile Optimized */
+    .hiburan-card {
+        padding: 30px 20px;
+    }
+
+    .hiburan-intro {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .performer-list {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .performer-item {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .performer-item i {
+        font-size: 1.1rem;
+    }
+
+    .performer-item span {
+        font-size: 1.1rem;
+    }
+
+    .special-guest {
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+    .guest-label {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .guest-name-highlight {
+        padding: 10px 18px;
+        gap: 10px;
+    }
+
+    .guest-name-highlight i {
+        font-size: 0.85rem;
+    }
+
+    .guest-name-highlight span {
+        font-size: 1.2rem;
     }
 
     .adab-cards {
