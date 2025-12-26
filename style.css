@@ -23,10 +23,10 @@
     --text-light: #FFFFFF;
     --text-muted: #888888;
 
-    /* Fonts */
-    --font-script: 'Great Vibes', cursive;
-    --font-serif: 'Playfair Display', serif;
-    --font-body: 'Cormorant Garamond', serif;
+    /* Fonts - More Readable & Elegant */
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Cinzel', serif;
+    --font-body: 'Poppins', sans-serif;
     --font-arabic: 'Amiri', serif;
 
     /* Transitions */
