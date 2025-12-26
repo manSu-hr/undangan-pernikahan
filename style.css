@@ -873,6 +873,94 @@ img {
 }
 
 /* ============================================
+   Quote Section - Love Quote
+   ============================================ */
+.quote-section {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-warm) 100%);
+}
+
+.quote-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+}
+
+.quote-icon {
+    color: var(--gold);
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.quote-text {
+    font-family: var(--font-serif);
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 2;
+    margin: 20px 0;
+}
+
+/* ============================================
+   Khitanan Section
+   ============================================ */
+.khitanan-section {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg-cream) 100%);
+}
+
+.khitanan-card {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 30px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.khitanan-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(145deg, var(--gold), var(--gold-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -95px auto 30px;
+    box-shadow: 0 10px 40px var(--gold-glow);
+}
+
+.khitanan-icon i {
+    font-size: 2.5rem;
+    color: var(--bg-dark);
+}
+
+.khitanan-name {
+    font-family: var(--font-script);
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: var(--gold-dark);
+    margin-bottom: 20px;
+}
+
+.khitanan-parent {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.khitanan-parent-names {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* ============================================
    Event Section
    ============================================ */
 .event-section {
@@ -1519,6 +1607,34 @@ img {
     .countdown-label {
         font-size: 1.7rem;
     }
+
+    /* Quote & Khitanan - Tablet */
+    .quote-section {
+        padding: 60px 20px;
+    }
+
+    .quote-text {
+        font-size: 1.1rem;
+    }
+
+    .khitanan-section {
+        padding: 80px 20px;
+    }
+
+    .khitanan-card {
+        padding: 40px 30px;
+        margin-top: 50px;
+    }
+
+    .khitanan-icon {
+        width: 70px;
+        height: 70px;
+        margin: -75px auto 25px;
+    }
+
+    .khitanan-icon i {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1621,6 +1737,56 @@ img {
 
     .adab-cards {
         grid-template-columns: 1fr;
+    }
+
+    /* Quote & Khitanan - Mobile Optimized */
+    .quote-section {
+        padding: 50px 15px;
+    }
+
+    .quote-content {
+        padding: 20px;
+    }
+
+    .quote-icon {
+        font-size: 1.5rem;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .khitanan-section {
+        padding: 60px 15px;
+    }
+
+    .khitanan-card {
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+
+    .khitanan-icon {
+        width: 60px;
+        height: 60px;
+        margin: -65px auto 20px;
+    }
+
+    .khitanan-icon i {
+        font-size: 1.6rem;
+    }
+
+    .khitanan-name {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .khitanan-parent {
+        font-size: 0.85rem;
+    }
+
+    .khitanan-parent-names {
+        font-size: 0.95rem;
     }
 }
 
